@@ -1,0 +1,11 @@
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\bin\Debug\Gialexis Management System.exe
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\bin\Debug\Gialexis Management System.pdb
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\bin\Debug\Gialexis Management System.xml
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\obj\Debug\Gialexis_Management_System.Employee_Main.resources
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\obj\Debug\Gialexis_Management_System.Resources.resources
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\obj\Debug\Gialexis Management System.vbproj.GenerateResource.Cache
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\obj\Debug\Gialexis Management System.exe
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\obj\Debug\Gialexis Management System.xml
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\obj\Debug\Gialexis Management System.pdb
+C:\Users\GiaPanget\Documents\GitHub\gialexis_ms\Gialexis Management System\Gialexis Management System\obj\Debug\Gialexis_Management_System.Add_Employee_Form.resources
