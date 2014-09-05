@@ -23,36 +23,35 @@ Partial Class Add_Employee_Form
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
+        Me.lblEmpId = New System.Windows.Forms.Label
+        Me.txtLastName = New System.Windows.Forms.TextBox
+        Me.txtFirstName = New System.Windows.Forms.TextBox
+        Me.txtMiddleName = New System.Windows.Forms.TextBox
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker
+        Me.dtpBirthday = New System.Windows.Forms.DateTimePicker
         Me.Label6 = New System.Windows.Forms.Label
         Me.Label7 = New System.Windows.Forms.Label
         Me.Label8 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
+        Me.lblAge = New System.Windows.Forms.Label
         Me.Label10 = New System.Windows.Forms.Label
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton
+        Me.rbMale = New System.Windows.Forms.RadioButton
+        Me.rbFemale = New System.Windows.Forms.RadioButton
         Me.Label11 = New System.Windows.Forms.Label
-        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.txtAddress = New System.Windows.Forms.TextBox
         Me.Label12 = New System.Windows.Forms.Label
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox
+        Me.txtContactNumber = New System.Windows.Forms.MaskedTextBox
         Me.Label13 = New System.Windows.Forms.Label
         Me.cmbDesignation = New System.Windows.Forms.ComboBox
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker
+        Me.dtpDateHired = New System.Windows.Forms.DateTimePicker
         Me.Label14 = New System.Windows.Forms.Label
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker
         Me.Label16 = New System.Windows.Forms.Label
         Me.Label17 = New System.Windows.Forms.Label
-        Me.TextBox5 = New System.Windows.Forms.TextBox
+        Me.txtRemarks = New System.Windows.Forms.TextBox
         Me.btnSave = New System.Windows.Forms.Button
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.btnBack = New System.Windows.Forms.Button
+        Me.txtAge = New System.Windows.Forms.MaskedTextBox
         Me.SuspendLayout()
         '
         'Label1
@@ -64,38 +63,38 @@ Partial Class Add_Employee_Form
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Employee ID:"
         '
-        'Label2
+        'lblEmpId
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(114, 25)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 18)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "000000000"
+        Me.lblEmpId.AutoSize = True
+        Me.lblEmpId.Location = New System.Drawing.Point(114, 25)
+        Me.lblEmpId.Name = "lblEmpId"
+        Me.lblEmpId.Size = New System.Drawing.Size(72, 18)
+        Me.lblEmpId.TabIndex = 1
+        Me.lblEmpId.Text = "00000000"
         '
-        'TextBox1
+        'txtLastName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(210, 22)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(187, 24)
-        Me.TextBox1.TabIndex = 2
+        Me.txtLastName.Location = New System.Drawing.Point(210, 22)
+        Me.txtLastName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtLastName.Name = "txtLastName"
+        Me.txtLastName.Size = New System.Drawing.Size(187, 24)
+        Me.txtLastName.TabIndex = 2
         '
-        'TextBox2
+        'txtFirstName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(413, 22)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(187, 24)
-        Me.TextBox2.TabIndex = 3
+        Me.txtFirstName.Location = New System.Drawing.Point(413, 22)
+        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtFirstName.Name = "txtFirstName"
+        Me.txtFirstName.Size = New System.Drawing.Size(187, 24)
+        Me.txtFirstName.TabIndex = 3
         '
-        'TextBox3
+        'txtMiddleName
         '
-        Me.TextBox3.Location = New System.Drawing.Point(616, 22)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(187, 24)
-        Me.TextBox3.TabIndex = 4
+        Me.txtMiddleName.Location = New System.Drawing.Point(616, 22)
+        Me.txtMiddleName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtMiddleName.Name = "txtMiddleName"
+        Me.txtMiddleName.Size = New System.Drawing.Size(187, 24)
+        Me.txtMiddleName.TabIndex = 4
         '
         'Label3
         '
@@ -127,15 +126,15 @@ Partial Class Add_Employee_Form
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Middle Name"
         '
-        'DateTimePicker1
+        'dtpBirthday
         '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(540, 76)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(109, 24)
-        Me.DateTimePicker1.TabIndex = 11
+        Me.dtpBirthday.CustomFormat = "dd/MM/yyyy"
+        Me.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpBirthday.Location = New System.Drawing.Point(540, 76)
+        Me.dtpBirthday.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dtpBirthday.Name = "dtpBirthday"
+        Me.dtpBirthday.Size = New System.Drawing.Size(114, 24)
+        Me.dtpBirthday.TabIndex = 11
         '
         'Label6
         '
@@ -165,14 +164,14 @@ Partial Class Add_Employee_Form
         Me.Label8.TabIndex = 16
         Me.Label8.Text = "Age"
         '
-        'Label9
+        'lblAge
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(507, 122)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(96, 18)
-        Me.Label9.TabIndex = 17
-        Me.Label9.Text = "000 years old"
+        Me.lblAge.AutoSize = True
+        Me.lblAge.Location = New System.Drawing.Point(539, 122)
+        Me.lblAge.Name = "lblAge"
+        Me.lblAge.Size = New System.Drawing.Size(68, 18)
+        Me.lblAge.TabIndex = 17
+        Me.lblAge.Text = "years old"
         '
         'Label10
         '
@@ -183,27 +182,27 @@ Partial Class Add_Employee_Form
         Me.Label10.TabIndex = 13
         Me.Label10.Text = "Gender"
         '
-        'RadioButton1
+        'rbMale
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(726, 79)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(58, 22)
-        Me.RadioButton1.TabIndex = 14
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Male"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rbMale.AutoSize = True
+        Me.rbMale.Location = New System.Drawing.Point(726, 79)
+        Me.rbMale.Name = "rbMale"
+        Me.rbMale.Size = New System.Drawing.Size(58, 22)
+        Me.rbMale.TabIndex = 14
+        Me.rbMale.TabStop = True
+        Me.rbMale.Text = "Male"
+        Me.rbMale.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rbFemale
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(726, 107)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(75, 22)
-        Me.RadioButton2.TabIndex = 15
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Female"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rbFemale.AutoSize = True
+        Me.rbFemale.Location = New System.Drawing.Point(726, 107)
+        Me.rbFemale.Name = "rbFemale"
+        Me.rbFemale.Size = New System.Drawing.Size(75, 22)
+        Me.rbFemale.TabIndex = 15
+        Me.rbFemale.TabStop = True
+        Me.rbFemale.Text = "Female"
+        Me.rbFemale.UseVisualStyleBackColor = True
         '
         'Label11
         '
@@ -214,13 +213,13 @@ Partial Class Add_Employee_Form
         Me.Label11.TabIndex = 8
         Me.Label11.Text = "Address"
         '
-        'TextBox4
+        'txtAddress
         '
-        Me.TextBox4.Location = New System.Drawing.Point(80, 78)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(372, 65)
-        Me.TextBox4.TabIndex = 9
+        Me.txtAddress.Location = New System.Drawing.Point(80, 78)
+        Me.txtAddress.Multiline = True
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(372, 65)
+        Me.txtAddress.TabIndex = 9
         '
         'Label12
         '
@@ -231,13 +230,13 @@ Partial Class Add_Employee_Form
         Me.Label12.TabIndex = 18
         Me.Label12.Text = "Contact Number"
         '
-        'MaskedTextBox1
+        'txtContactNumber
         '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(138, 154)
-        Me.MaskedTextBox1.Mask = "####-###-#####"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(119, 24)
-        Me.MaskedTextBox1.TabIndex = 19
+        Me.txtContactNumber.Location = New System.Drawing.Point(138, 154)
+        Me.txtContactNumber.Mask = "####-###-####"
+        Me.txtContactNumber.Name = "txtContactNumber"
+        Me.txtContactNumber.Size = New System.Drawing.Size(112, 24)
+        Me.txtContactNumber.TabIndex = 19
         '
         'Label13
         '
@@ -257,15 +256,15 @@ Partial Class Add_Employee_Form
         Me.cmbDesignation.Size = New System.Drawing.Size(129, 26)
         Me.cmbDesignation.TabIndex = 21
         '
-        'DateTimePicker2
+        'dtpDateHired
         '
-        Me.DateTimePicker2.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(679, 155)
-        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(109, 24)
-        Me.DateTimePicker2.TabIndex = 23
+        Me.dtpDateHired.CustomFormat = "dd/MM/yyyy"
+        Me.dtpDateHired.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpDateHired.Location = New System.Drawing.Point(679, 155)
+        Me.dtpDateHired.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dtpDateHired.Name = "dtpDateHired"
+        Me.dtpDateHired.Size = New System.Drawing.Size(114, 24)
+        Me.dtpDateHired.TabIndex = 23
         '
         'Label14
         '
@@ -276,30 +275,11 @@ Partial Class Add_Employee_Form
         Me.Label14.TabIndex = 22
         Me.Label14.Text = "Date Hired"
         '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(566, 186)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(113, 18)
-        Me.Label15.TabIndex = 24
-        Me.Label15.Text = "Date Dismissed"
-        '
-        'DateTimePicker3
-        '
-        Me.DateTimePicker3.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker3.Location = New System.Drawing.Point(679, 183)
-        Me.DateTimePicker3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(109, 24)
-        Me.DateTimePicker3.TabIndex = 25
-        '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(704, 209)
+        Me.Label16.Location = New System.Drawing.Point(702, 186)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(65, 13)
         Me.Label16.TabIndex = 26
@@ -314,109 +294,119 @@ Partial Class Add_Employee_Form
         Me.Label17.TabIndex = 27
         Me.Label17.Text = "Remarks"
         '
-        'TextBox5
+        'txtRemarks
         '
-        Me.TextBox5.Location = New System.Drawing.Point(18, 213)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(533, 70)
-        Me.TextBox5.TabIndex = 28
+        Me.txtRemarks.Location = New System.Drawing.Point(18, 213)
+        Me.txtRemarks.Multiline = True
+        Me.txtRemarks.Name = "txtRemarks"
+        Me.txtRemarks.Size = New System.Drawing.Size(533, 70)
+        Me.txtRemarks.TabIndex = 28
         '
         'btnSave
         '
         Me.btnSave.Image = Global.Gialexis_Management_System.My.Resources.Resources.Save_icon
         Me.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSave.Location = New System.Drawing.Point(584, 229)
+        Me.btnSave.Location = New System.Drawing.Point(589, 227)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(81, 38)
         Me.btnSave.TabIndex = 29
         Me.btnSave.Text = "      Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnBack
         '
-        Me.Button1.Image = Global.Gialexis_Management_System.My.Resources.Resources.go_back_icon
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(695, 229)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(81, 38)
-        Me.Button1.TabIndex = 30
-        Me.Button1.Text = "      Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnBack.Image = Global.Gialexis_Management_System.My.Resources.Resources.go_back_icon
+        Me.btnBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBack.Location = New System.Drawing.Point(700, 227)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(81, 38)
+        Me.btnBack.TabIndex = 30
+        Me.btnBack.Text = "      Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'txtAge
+        '
+        Me.txtAge.Location = New System.Drawing.Point(507, 119)
+        Me.txtAge.Mask = "##"
+        Me.txtAge.Name = "txtAge"
+        Me.txtAge.Size = New System.Drawing.Size(26, 24)
+        Me.txtAge.TabIndex = 17
+        Me.txtAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Add_Employee_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(822, 302)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txtAge)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtRemarks)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.DateTimePicker3)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.DateTimePicker2)
+        Me.Controls.Add(Me.dtpDateHired)
         Me.Controls.Add(Me.cmbDesignation)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.MaskedTextBox1)
+        Me.Controls.Add(Me.txtContactNumber)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.rbFemale)
+        Me.Controls.Add(Me.rbMale)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.lblAge)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.dtpBirthday)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtMiddleName)
+        Me.Controls.Add(Me.txtFirstName)
+        Me.Controls.Add(Me.txtLastName)
+        Me.Controls.Add(Me.lblEmpId)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
         Me.Name = "Add_Employee_Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Add Employee"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents lblEmpId As System.Windows.Forms.Label
+    Friend WithEvents txtLastName As System.Windows.Forms.TextBox
+    Friend WithEvents txtFirstName As System.Windows.Forms.TextBox
+    Friend WithEvents txtMiddleName As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpBirthday As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents lblAge As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbMale As System.Windows.Forms.RadioButton
+    Friend WithEvents rbFemale As System.Windows.Forms.RadioButton
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtAddress As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents MaskedTextBox1 As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txtContactNumber As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents cmbDesignation As System.Windows.Forms.ComboBox
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpDateHired As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtRemarks As System.Windows.Forms.TextBox
     Friend WithEvents btnSave As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnBack As System.Windows.Forms.Button
+    Friend WithEvents txtAge As System.Windows.Forms.MaskedTextBox
 End Class

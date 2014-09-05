@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Gialexis_Management_System.Add_Employee_Form
+            Me.MainForm = Global.Gialexis_Management_System.Employee_Main
         End Sub
     End Class
 End Namespace

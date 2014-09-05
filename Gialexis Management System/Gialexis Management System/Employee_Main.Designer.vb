@@ -62,7 +62,7 @@ Partial Class Employee_Main
         Me.cmbSearchBy.FormattingEnabled = True
         Me.cmbSearchBy.Items.AddRange(New Object() {"Employee ID", "Last Name", "First Name"})
         Me.cmbSearchBy.Location = New System.Drawing.Point(339, 20)
-        Me.cmbSearchBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbSearchBy.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbSearchBy.Name = "cmbSearchBy"
         Me.cmbSearchBy.Size = New System.Drawing.Size(166, 26)
         Me.cmbSearchBy.TabIndex = 4
@@ -70,9 +70,9 @@ Partial Class Employee_Main
         'txtSearchKey
         '
         Me.txtSearchKey.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearchKey.ForeColor = System.Drawing.SystemColors.InactiveCaption
+        Me.txtSearchKey.ForeColor = System.Drawing.Color.DarkGray
         Me.txtSearchKey.Location = New System.Drawing.Point(553, 20)
-        Me.txtSearchKey.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSearchKey.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSearchKey.Name = "txtSearchKey"
         Me.txtSearchKey.Size = New System.Drawing.Size(215, 24)
         Me.txtSearchKey.TabIndex = 5
@@ -80,6 +80,7 @@ Partial Class Employee_Main
         '
         'dgvEmpRecord
         '
+        Me.dgvEmpRecord.AllowUserToAddRows = False
         Me.dgvEmpRecord.AllowUserToResizeColumns = False
         Me.dgvEmpRecord.AllowUserToResizeRows = False
         Me.dgvEmpRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -174,7 +175,7 @@ Partial Class Employee_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(890, 308)
+        Me.ClientSize = New System.Drawing.Size(890, 485)
         Me.Controls.Add(Me.dgvEmpRecord)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.txtSearchKey)
@@ -185,10 +186,11 @@ Partial Class Employee_Main
         Me.Controls.Add(Me.btnAddEmp)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "Employee_Main"
-        Me.Text = "Employee"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.Text = "Employee Main"
         CType(Me.dgvEmpRecord, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
